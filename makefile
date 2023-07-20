@@ -2,7 +2,7 @@ TAR = cacti
 
 .PHONY: dbg opt depend clean clean_dbg clean_opt
 
-all: dbg
+all: opt #set to dbg for debug
 
 dbg: $(TAR).mk obj_dbg
 	@$(MAKE) TAG=dbg -C . -f $(TAR).mk
